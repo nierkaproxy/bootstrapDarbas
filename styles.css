@@ -1,0 +1,20 @@
+.container-fluid img{
+    height: 40px;
+}
+
+
+li{
+    padding: 20px;
+}
+
+.navbar-brand{
+    padding-left: 30px;
+}
+
+@media (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+
