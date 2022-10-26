@@ -1,7 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
 .container-fluid img{
     height: 40px;
 }
 
+.navbar{
+    font-family: 'Italiana', serif;
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+}
+
+
+
+.navbar-brand:active, li:active a {
+    color: green !important;
+}
 
 li{
     padding: 20px;
@@ -9,12 +35,67 @@ li{
 
 .navbar-brand{
     padding-left: 30px;
+    font-size: 1.3em;
+}
+
+.nav-item1 {
+    padding-right: 100px;
+}
+
+.nav-item2 {
+    padding-right: 100px;
 }
 
 @media (max-width: 767px){
     .navbar-brand{
         display: none;
     }
+
+    .nav-item1, .nav-item2{
+        padding-right: 0px;
+    }
+
+
+   
 }
 
 
+.container-index {
+    height: 100%;
+    width: 100%;
+    background-image: url(./images/irina-iriser-2Y4dE8sdhlc-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    position: relative;
+    background-color: white;
+    height: 60%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon1 {
+    padding-top: 2em;
+}
+
+.icon1 img {
+    height: 5em;
+    width: 6em;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Italiana', serif;
+}
