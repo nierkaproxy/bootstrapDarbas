@@ -25,10 +25,6 @@ body{
 
 
 
-.navbar-brand:active, li:active a {
-    color: green !important;
-}
-
 li{
     padding: 20px;
 }
@@ -93,18 +89,17 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     border: white solid 50px;
-    overflow: scroll;
 }
 
 .grid-box1 {
-    height: 200px;
-    grid-area: 1 / 1 / 2 / 2;
+    height: 20em;
+    /* grid-area: 1 / 1 / 2 / 2; */
     background-image: url(./images/oak.jpg);
     background-size: cover;
 }
 
 .grid-box2 {
-    grid-area: 1 / 2 / 2 / 3;
+    /* grid-area: 1 / 2 / 2 / 3; */
     height: 70%;
     text-align: start;
     padding-left: 15px;
@@ -112,15 +107,15 @@ h1 {
 }
 
 .grid-box3 {
-    height: 70%;
-    grid-area: 1 / 3 / 2 / 4;
+    height: 20em;
+    /* grid-area: 1 / 3 / 2 / 4; */
     background-image: url(./images/pine.jpg);
     background-size: cover;
 }
 
 .grid-box4 {
     height: 70%;
-    grid-area: 1 / 4 / 2 / 5;
+    /* grid-area: 1 / 4 / 2 / 5; */
     text-align: start;
     padding-left: 15px;
     padding-top: 30px;
@@ -128,14 +123,14 @@ h1 {
 
 .grid-box5 {
     height: 70%;
-    grid-area: 2 / 1 / 3 / 2;
+    /* grid-area: 2 / 1 / 3 / 2; */
     background-image: url(./images/coltsfoot.jpg);
     background-size: cover;
 }
 
 .grid-box6 {
     height: 70%;
-    grid-area: 2 / 2 / 3 / 3;
+    /* grid-area: 2 / 2 / 3 / 3; */
     text-align: start;
     padding-left: 15px;
     padding-top: 30px;
@@ -143,14 +138,14 @@ h1 {
 
 .grid-box7 {
     height: 70%;
-    grid-area: 2 / 3 / 3 / 4;
+    /* grid-area: 2 / 3 / 3 / 4; */
     background-image: url(./images/nettle.jpg);
     background-size: cover;
 }
 
 .grid-box8 {
     height: 70%;
-    grid-area: 2 / 4 / 3 / 5;
+    /* grid-area: 2 / 4 / 3 / 5; */
     text-align: start;
     padding-left: 15px;
     padding-top: 30px;
@@ -168,6 +163,14 @@ h1 {
     .container-grid1 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(8, 1fr);
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
     }
 
+    .grid-box1, .grid-box2, .grid-box3 {
+        height: 100em;
+        width: 20em;
+    }
 }
