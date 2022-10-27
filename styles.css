@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@300;400&display=swap');
 
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-
 body{
     height: 100vh;
-    overflow: hidden;
 }
-
-
 
 .container-fluid img{
     height: 40px;
+}
+
+a:hover {
+    color: green !important;
 }
 
 .navbar{
@@ -22,8 +22,6 @@ body{
     font-size: 1.5em;
     border-bottom: 2px solid black;
 }
-
-
 
 li{
     padding: 20px;
@@ -41,7 +39,6 @@ li{
 .nav-item2 {
     padding-right: 100px;
 }
-
 
 .container-index {
     height: 100%;
@@ -84,22 +81,28 @@ h1 {
 }
 
 .container-grid1 {
-    height: 100vh;
+    height: 200vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     border: white solid 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 .grid-box1 {
     height: 20em;
-    /* grid-area: 1 / 1 / 2 / 2; */
     background-image: url(./images/oak.jpg);
     background-size: cover;
 }
 
+.grid-box1-1 {
+    height: 20em;
+    background-image: url(./images/orchid.jpg);
+    background-size: cover;
+}
+
 .grid-box2 {
-    /* grid-area: 1 / 2 / 2 / 3; */
     height: 70%;
     text-align: start;
     padding-left: 15px;
@@ -108,44 +111,56 @@ h1 {
 
 .grid-box3 {
     height: 20em;
-    /* grid-area: 1 / 3 / 2 / 4; */
     background-image: url(./images/pine.jpg);
+    background-size: cover;
+}
+
+.grid-box3-1 {
+    height: 20em;
+    background-image: url(./images/daisy.jpg);
     background-size: cover;
 }
 
 .grid-box4 {
     height: 70%;
-    /* grid-area: 1 / 4 / 2 / 5; */
     text-align: start;
     padding-left: 15px;
     padding-top: 30px;
 }
 
 .grid-box5 {
-    height: 70%;
-    /* grid-area: 2 / 1 / 3 / 2; */
+    height: 20em;
     background-image: url(./images/coltsfoot.jpg);
+    background-size: cover;
+}
+
+.grid-box5-1 {
+    height: 20em;
+    background-image: url(./images/moss.jpg);
     background-size: cover;
 }
 
 .grid-box6 {
     height: 70%;
-    /* grid-area: 2 / 2 / 3 / 3; */
     text-align: start;
     padding-left: 15px;
     padding-top: 30px;
 }
 
 .grid-box7 {
-    height: 70%;
-    /* grid-area: 2 / 3 / 3 / 4; */
+    height: 20em;
     background-image: url(./images/nettle.jpg);
+    background-size: cover;
+}
+
+.grid-box7-1 {
+    height: 20em;
+    background-image: url(./images/dianthus.jpg);
     background-size: cover;
 }
 
 .grid-box8 {
     height: 70%;
-    /* grid-area: 2 / 4 / 3 / 5; */
     text-align: start;
     padding-left: 15px;
     padding-top: 30px;
@@ -154,6 +169,10 @@ h1 {
 @media (max-width: 767px){
     .navbar-brand{
         display: none;
+    }
+
+    ul{
+        text-align: start;
     }
 
     .nav-item1, .nav-item2{
@@ -165,12 +184,73 @@ h1 {
         grid-template-rows: repeat(8, 1fr);
         display: flex;
         flex-direction: column;
-
         align-items: center;
     }
 
-    .grid-box1, .grid-box2, .grid-box3 {
+    .container-grid1 > *{
         height: 100em;
-        width: 20em;
+        width: 25em;
+        text-align: center;
     }
+    .titleGydomieji{
+        padding-top: 2em;
+    }
+
+    .p-container p{
+        font-size: small;
+    }
+}
+
+@media (min-width: 768px){
+    body{
+        overflow: hidden;
+    }
+
+    .container-grid1{
+        height: 100vh;
+    }
+
+    .titleGydomieji h2{
+        display: none;
+    }
+    li a span {
+        display: none;
+    }
+}
+
+.titleGydomieji {
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-family: 'Italiana', serif;
+    font-size: 2em;
+}
+
+.container-flex1{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.image-flex img {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+    padding: 3em;
+}
+
+.p-container {
+    display: flex;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+
+.p-flex1, .p-flex2{
+    padding-left: 6em;
+    padding-right: 6em;
 }
